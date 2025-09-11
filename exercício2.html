@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de perfil</title>
+<style>
+    .perfil{ width: 180px;
+    height: 270px; 
+    border-radius: 50%; /* Torna o elemento circular */
+    overflow: hidden; /* Esconde partes da imagem que excedem os limites do círculo */
+    object-fit: cover; /* Garante que a imagem cubra o círculo sem distorcer */}
+    body{
+         background-color: rgb(252, 235, 168);
+    }
+    h1,h2,h3{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    img{width: 20px;
+    height: 20px;}
+</style>
+</head>
+
+
+
+
+
+<body>
+<header>
+
+ <h1>Meu perfil completo</h1>
+ <img class="perfil" src="C:\Users\Aluno BFD\Downloads\WhatsApp Image 2025-09-04 at 9.44.13 AM.jpeg" alt="foto-romero">
+ <p>Olá! meu nome é Romero, sou formado em Análise e Desenvolvimento de Sistemas, no momento atual estou estudando Desenvolvimento Front-End no programa Bolsa Futuro Digital da Softex PE, possuo contas para contato tanto no Linkedin quanto no Github.</p>
+</header>  
+
+    
+<h2>meus hobbies:</h2>
+<ul>
+<li>desenhar</li>
+<li>assitir filmes/séries</li>
+<li>jogar</li>
+<li>Dormir</li>
+</ul>
+<br>
+<button onclick="apresentar()">Clique para se apresentar</button>
+<script>
+function apresentar() {
+let nome = prompt("Qual é o seu nome?");
+let idade = prompt("Quantos anos você tem?");
+if (nome && idade) {
+alert("Prazer em te conhecer, " + nome + "! Você tem " + idade + " anos.");
+} else {
+alert("Você não informou seus dados.");
+}
+}
+</script>
+
+<br>
+<h3>Minhas Metas</h3>
+<ul>
+<li>ser organizado</li>
+<li>fazer meu próprio jogo</li>
+<li>ter meu primeiro emprego</li>
+<li>fazer meu portfólio</li>
+<li>minha primeira viagem de avião</li>
+</ul>
+<br>
+<h3>contato</h3>
+<img src="linkedin-logo-linkedin-icon-transparent-free-png.webp" alt="Linkedin">
+
+<img src="github5.png" alt="Github imagem">
+<footer>Página criada durante o curso de Front-End</footer>
+</body>
+</html>
